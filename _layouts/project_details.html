@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head_meta %}
+    {% include css %}
+
+</head>
+<body style="zoom: 1;">
+
+{% include navbar.html %}
+
+<section class="hero  is-link">
+    <div class="hero-body">
+        <div class="container ">
+            <h1 class="title is-capitalized">
+                {{ page.title}}
+            </h1>
+            <h2 class="subtitle">
+                {{ page.subtitle}}
+            </h2>
+            <div class="field is-grouped is-grouped-multiline is-capitalized">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-white is-radiusless">Test Cases</span>
+                        <span class="tag is-info is-radiusless">{{ page.test_cases }}</span>
+                    </div>
+                </div>
+
+
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-white is-radiusless">Code Quality</span>
+                        <span class="tag is-info is-radiusless">{{ page.code_quality }}</span>
+
+                    </div>
+                </div>
+
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-white is-radiusless">Commit Activity</span>
+                        <span class="tag is-info is-radiusless">{{ page.commit_activity }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <div class="container">
+            <nav class="breadcrumb is-capitalized" aria-label="breadcrumbs">
+                <ul>
+                    <li><a> >> </a></li>
+                    {% for item in page.breadcrumbs %}
+                    <li><a href="#{{ item }}">{{ item }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-offset-1 is-10">
+                {{ content }}
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% include footer.html %}
+{% include gtag.js %}
+</body>
+</html>
