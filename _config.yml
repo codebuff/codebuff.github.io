@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Deepankar Tyagi"
-email: first_name7last_name@gmail.com
+email: firstname7lastname@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Deepankar Tyagi's abode on internet
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -39,3 +39,9 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
+
+plugins:
+   - jekyll-redirect-from
+
+whitelist:
+   - jekyll-redirect-from
