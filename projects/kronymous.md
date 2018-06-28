@@ -7,7 +7,9 @@ code_quality: Bearable
 commit_activity: Occasional  
 breadcrumbs: ["screenshots"]
 permalink: /kronymous/
-
+redirect_from:
+  - /current_projects/details/kronymous/
+  - /krotor/
 ---
 
 
