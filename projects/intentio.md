@@ -7,7 +7,8 @@ code_quality: Bearable
 commit_activity: None
 breadcrumbs: ["notes", "screenshots"]
 permalink: /intentio/
-
+redirect_from:
+  - /previous_projects/details/intentio/
 ---
 
 <div class="content" markdown="1">
